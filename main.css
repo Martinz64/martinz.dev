@@ -123,7 +123,8 @@ header h1, header .extra {
     z-index: 100;
     margin-top: -.25em;
     left: -0.25em;
-    font-size:xx-small;
+    font-size: x-large;
+
 }
 /*.description:before {
     content: "";
@@ -140,7 +141,7 @@ header h1, header .extra {
     opacity: 1;
 }
 .item-wrapper .description p {
-    font-size: x-small;
+    font-size: x-large;
 }
 
 ul{
@@ -157,7 +158,7 @@ ul{
 }
 footer{
     margin-top:1em;
-    font-size: xx-small;
+    font-size: x-large;
     color: #AAAAAA;
 }
 
