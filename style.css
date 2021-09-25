@@ -13,7 +13,7 @@
     --secondary-text-color  :#757575;
     --divider-color         :#BDBDBD;
 
-    --font-size:min(10vw,1.8em);
+    --font-size:min(10vw,1.25em);
     font-size:var(--font-size);
     
 }
