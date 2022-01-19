@@ -1,0 +1,86 @@
+:root{
+    --border-radius: 3px;
+    --pfp-size: 6em;
+    --header-width: 30em;
+
+    /*Colours*/
+    --dark-primary-color    :#1976D2;
+    --default-primary-color :#2196F3;
+    --light-primary-color   :#BBDEFB;
+    --text-primary-color    :#FFFFFF;
+    --accent-color          :#448AFF;
+    --primary-text-color    :#212121;
+    --secondary-text-color  :#757575;
+    --divider-color         :#BDBDBD;
+
+    --font-size:min(10vw,1.25em);
+    font-size:var(--font-size);
+    
+}
+
+/*background-color: #212121;
+}*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.profile_pic img{
+    width:20%;
+}
+.icon{
+    height:1em;
+}
+
+.wrapper{
+    width: 80%;
+    background-color: #1976D2;
+    margin-bottom: 1em;
+    align-self: center;
+    box-shadow: 0px 1px 5px 0px rgb(0 0 0);
+    border-radius: 4px;
+    padding: 1em;
+}
+
+header#pfp > div.profile_pic{
+    display:flex;
+    flex-flow: row;
+    align-items: center;
+}
+header#pfp > .profile_pic > h1{
+    width:min-content;
+}
+
+.item{
+    width:fit-content;
+    display:flex;
+    align-items: center;
+    margin-right:1em;
+}
+.item-wrapper{
+    width:min-content;
+}
+.item-wrapper .description{
+    display:none;
+}
+header#extra{
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+}
+ 
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: black;
+    }
+}

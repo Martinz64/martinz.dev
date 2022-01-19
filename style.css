@@ -18,6 +18,9 @@
     
 }
 
+/*background-color: #212121;
+}*/
+
 * {
     margin: 0px;
     padding: 0px;
@@ -29,6 +32,8 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background-color: white;
+    color: black;
 }
 .wrapper {
     /*height:100vh;*/
@@ -159,4 +164,11 @@ header#extra{
 a.item{
     text-decoration: none;
     color:unset;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
 }
