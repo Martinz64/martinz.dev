@@ -1,6 +1,8 @@
 :root{
+    background-color: #212121;
+
     --border-radius: 3px;
-    --pfp-size: 6em;
+    --pfp-size: 5em;
     --header-width: 30em;
 
     /*Colours*/
@@ -70,7 +72,7 @@ body{
     width: min(20vw,3em);
 }
 .profile_pic h1 {
-    font-size: calc(min(max(1em,10vw),2em));
+    font-size: calc(min(calc(min(10vw, var(--pfp-size))),3em));
     align-self: center;
     display: inline-flex;
     width: auto;
