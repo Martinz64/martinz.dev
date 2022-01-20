@@ -1,4 +1,6 @@
 :root{
+
+    background-color: #212121;
     --border-radius: 3px;
     --pfp-size: 6em;
     --header-width: 30em;
@@ -177,6 +179,7 @@ footer a{
 .wrapper-mobile{
     display: none;
 }
+
 
 @media screen and (max-width: 400px) {
     .wrapper{display: none;}
