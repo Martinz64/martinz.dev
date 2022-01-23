@@ -1,3 +1,22 @@
+/*
+:root{
+    background-color: #212121;
+    --border-radius: 3px;
+    --pfp-size: 5em;
+    --header-width: 30em;
+
+    --dark-primary-color    :#1976D2;
+    --default-primary-color: #2196f3;
+    --light-primary-color   :#BBDEFB;
+    --text-primary-color    :#FFFFFF;
+    --accent-color          :#448AFF;
+    --primary-text-color    :#212121;
+    --secondary-text-color  :#757575;
+    --divider-color         :#BDBDBD;
+    --font-size:min(10vw,1.25em);
+    font-size:var(--font-size);
+}*/
+
 :root{
     background-color: #212121;
     --border-radius: 3px;
@@ -6,7 +25,7 @@
 
     /*Colours*/
     --dark-primary-color    :#1976D2;
-    --default-primary-color :#2196F3;
+    --default-primary-color: #3f51b5;
     --light-primary-color   :#BBDEFB;
     --text-primary-color    :#FFFFFF;
     --accent-color          :#448AFF;
@@ -35,8 +54,8 @@ body{
     color: black;
 }
 .wrapper {
-    /*height:100vh;*/
-/*    width: min(calc(100vw - 0em), var(--header-width));*/
+    /* height:100vh; */
+    /*    width: min(calc(100vw - 0em), var(--header-width));*/
     display: flex;
     justify-content: center;
     flex-flow: row;
@@ -76,9 +95,11 @@ body{
     width: auto;
     justify-content: flex-end;
     font-family: ubuntu;
+    color: white;
+    text-shadow: 0 4px 4px rgb(0 0 0 / 30%);
 }
 
-.wrapper:nth-child(2){
+.wrapper:nth-child(2),.wrapper:nth-child(3){
     padding-top:1em;
 }
 header#extra{
@@ -118,15 +139,23 @@ header#extra{
     /* background-color: #cddc39; */
     background-color: var(--accent-color);
     transition:cubic-bezier(0.075, 0.82, 0.165, 1) all .1s;
-    transform: scale(1);
+    transform: scale(1) translate(0px,0px);
     cursor: pointer;
     /* margin: 0px; */
     /* align-self: stretch; */
     /* width: 50%; */
     /* flex-flow: row; */
 }
-.item:hover{
+.item:not(.item:nth-child(1)){
+    margin-left: 0.5em;
+}
+.item:hover, .item:focus-visible {
     transform: scale(1.1);
+    border-radius: 2px;
+    z-index:100;
+}
+.item.active{
+    transform: scale(1.07);
     border-radius: 2px;
     z-index:100;
 }
