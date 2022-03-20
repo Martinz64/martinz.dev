@@ -71,7 +71,7 @@ body{
     height: fit-content;
     padding: 1em;
     flex-flow: column;
-    box-shadow: 0 4px 4px 0px rgb(0 0 0 / 30%);
+    box-shadow: 0 4px 4px 1px rgb(0 0 0 / 100%);
     border-radius: var(--border-radius);
 }
 .profile_pic{
@@ -237,6 +237,32 @@ a.item{
     margin-right: 0.5em;
 }
 
+.item-header-text {
+    /*font-size: calc(min(calc(min(10vw, var(--pfp-size))),3em));*/
+    /*font-size: calc(min(15vw,4em));*/
+    font-size: 1.5em;
+    align-self: left;
+    display: inline-flex;
+    width: auto;
+    
+    font-family: ubuntu;
+    color: white;
+    text-shadow: 0 4px 4px rgb(0 0 0 / 30%);
+    margin-bottom:.25em;
+}
+
+.item-half-1 span.small{
+    font-size: 1em;
+    align-self: left;
+    display: inline-flex;
+    width: auto;
+    font-family: ubuntu;
+    color: white;
+    text-shadow: 0px 1px 2px rgb(0 0 0);
+    /*text-shadow: 0 4px 4px rgb(0 0 0 / 30%);*/
+    margin-bottom:.25em;
+}
+
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 520px) {
     .item{
@@ -254,6 +280,12 @@ a.item{
     .float-right{
         /* position:absolute; */
         /* width: 100%; */
+    }
+    .language-list-item span{
+        display:none;
+    }
+    .language-list-item{
+        margin-right:0em;
     }
 }
 
